@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; scroll-behavior: smooth; }
+.section { scroll-margin-top: 90px; }
+a:focus-visible, button:focus-visible { outline:2px solid rgba(168,85,247,.9); outline-offset:2px; border-radius:.6rem; }
+
+/* Scene baseline */
+.scene {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+/* Prevent decoration from blocking clicks */
+.decor { pointer-events: none; }
+
+/* Fancy gradients */
+.bg-mesh {
+  background:
+    radial-gradient(60rem 50rem at 80% -20%, rgba(168,85,247,.22), transparent 60%),
+    radial-gradient(60rem 60rem at -10% 110%, rgba(34,211,238,.18), transparent 60%),
+    #0a0911;
+}
